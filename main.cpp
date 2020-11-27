@@ -235,9 +235,6 @@ void File(Node** hashTable, int hash, int* gen) {
     }
     file.close();
     gpa = rand() % 4 + rand() % 10 * 0.1;
-    cout << nameFirst << endl;
-    cout << nameLast << endl;
-    cout << strlen(nameFirst) << endl;
     hashTable[*gen % hash] = new Node(nameFirst, nameLast, *gen, gpa);
     *gen = *gen + 1;
   }
